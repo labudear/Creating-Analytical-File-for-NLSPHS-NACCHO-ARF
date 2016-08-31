@@ -1,4 +1,4 @@
-use "X:\xDATA\NLSPHS 2014\Analysis\AnalyticalFiles\data\NLSPHSNACCHOARFAll4Waves_wts_peer_rurb5.dta", clear
+use "C:\Users\LRTI222\Dropbox\Data\NLSPHS\Analysis\data\NLSPHSNACCHOARFAll4Waves_wts_peer_rurb5.dta", clear
 gen TBD_UNID=_n
 save full_lrt, replace
 keep if yearsurvey==2014
@@ -9,7 +9,7 @@ hsp1-hsp19 hsp20 chc1-chc19 chc20 fbo1-fbo19 fbo20 nono1-nono19 nono20 ///
 ins1-ins19 ins20 emp1-emp19 emp20 sch1-sch19 sch20 uni1-uni19 uni20 oth1-oth19 oth20 ///
 none1-none19 none20 
 
-export excel using "C:\Users\LRTI222\Dropbox\Data\NLSPHS\Analysis\data\NLSPHS2014_raw.xlsx", firstrow(variables) replace
+export excel using "C:\Users\Lava\Dropbox\Data\NLSPHS\Analysis\data\CPHS Trend\QC\NLSPHS2014_raw.xlsx", firstrow(variables) replace
  
 /*Then use C:\Users\LRTI222\Dropbox\Data\NLSPHS\Analysis\nlsphs2014_2_withSNAandTBD_UNID.sas
 The output from this file will be:
@@ -92,7 +92,7 @@ emp19 sch1 sch2 sch3 sch4 sch5 sch6 sch7 sch8 sch9 sch10 sch11 ///
 sch12 sch13 sch14 sch15 sch16 sch17 sch18 sch19 uni1 uni2 uni3 uni4 ///
 uni5 uni6 uni7 uni8 uni9 uni10 uni11 uni12 uni13 uni14 uni15 uni16 ///
 uni17 uni18 uni19 oth1 oth2 oth3 oth4 oth5 oth6 oth7 oth8 oth9 ///
-oth10 oth11 oth12 oth13 oth14 oth15 oth16 oth17 oth18 oth19 survresp ///
+oth10 oth11 oth12 oth13 oth14 oth15 oth16 oth17 oth18 oth19 ///
 yearsurvey sha20 sao20 loc20 fed20 phy20 hsp20 chc20 fbo20 nono20 ins20 ///
 emp20 sch20 uni20 oth20 none1 none2 none3 none4 none5 none6 none7 none8 ///
 none9 none10 none11 none12 none13 none14 none15 none16 none17 none18 none19 ///
@@ -172,4 +172,4 @@ tab phtyp yearsurvey, col
 
 save "X:\xDATA\NLSPHS 2014\Analysis\AnalyticalFiles\data\NLSPHSNACCHOARFAll4Waves_wts_peer_rurb6.dta", replace
 
-
+save "C:\Users\LRTI222\Dropbox\Data\NLSPHS\Analysis\data\NLSPHSNACCHOARFAll4Waves_wts_peer_rurb6.dta", replace
